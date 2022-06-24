@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212529;
+    color: #ffffff;
+    font-family: 'Anek Latin', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cabeçalho {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #343a40;
+    border-radius: 8px;
+}
+
+div.icone img {
+    margin: 4px 50px 0;
+    border-radius: 8px;
+}
+
+.cabeçalho p {
+    font-size: 36px;
+}
+
+.btn-contato {
+    margin: 0 50px 0;
+    position: relative;
+    display: inline-block;
+}
+
+.btn-contato button {
+    background-color: #0B7B8F;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #ffffff;
+    border: solid 1px transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-contato button:hover{
+    background-color: #056070;
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 132px;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.btn-contato:hover .drop-content{
+    display: block;
+}
+
+.drop-content a {
+    font-size: 16px;
+    text-decoration: none;
+    padding: 4px 16px;
+    display: block;
+}
+
+.drop-content .linkedin {
+    background-color: #0a65c0;
+    border-radius: 8px;
+    max-width: 132px;
+}
+
+.drop-content .linkedin a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop-content .linkedin a img {
+    width: 48px;
+    height: 48px;
+}
+
+.drop-content .github {
+    background-color: #1b1e23;
+    border-radius: 8px;
+    max-width: 132px;
+    padding-right: 12px
+}
+
+.drop-content .github a {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 4px 16px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop-content .github a img {
+    width: 48px;
+    height: 48px;
+}
+
+.drop-content .facebook {
+    background-color: #033f7a;
+    border-radius: 8px;
+    max-width: 132px;
+}
+
+.drop-content .facebook a {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 4px 16px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop-content .facebook a img {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+main {
+    background-color: #343a40;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+main div.card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 25px auto;
+}
+
+main div.card figure {
+    margin-top: 50px;
+}
+
+main div.card figure img {
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+    object-fit: cover;
+    transition: 1.0s ease-in-out;
+}
+
+main div.card figure img:hover {
+    transform: scale(1.25) translate(5%, 10%);
+    transition: 1.0s ease-in-out;
+}
+
+main div.card figure {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+main div.card div.nome {
+    margin-right: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div.card div.nome h1{
+    margin-top: 50px;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+main div.card div.nome p {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+main div.sobre div.sobre-mim {
+    border-bottom: solid 3px #ffffff;
+    margin-bottom: 20px;
+}
+
+main div.sobre div.sobre-mim p {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+main div.sobre p {
+    font-size: 24px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+main div.botao-projetos {
+    margin-top: 25px;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+main div.botao-projetos a{
+    background-color: #0B7B8F;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: solid 1px transparent;
+    transition: 0.3s ease;
+}
+
+main div.botao-projetos a:hover {
+    background-color: #056070;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
